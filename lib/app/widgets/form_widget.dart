@@ -25,6 +25,7 @@ class _FormWidgetState extends State<FormWidget> {
          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           TextFormField(
+            obscureText: true,
             controller: githubToken,
             style: letterStyle,
                     decoration: const InputDecoration(
