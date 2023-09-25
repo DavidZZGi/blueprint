@@ -26,7 +26,7 @@ class ListTileBody extends StatelessWidget {
         ),
         subtitle: Row(
           children: <Widget>[
-            const Icon(Icons.linear_scale, color: Colors.yellowAccent),
+            const Icon(Icons.person, color: Color.fromARGB(255, 59, 59, 59)),
             Text(issue.user.login, style: const TextStyle(color: Colors.white))
           ],
         ),
