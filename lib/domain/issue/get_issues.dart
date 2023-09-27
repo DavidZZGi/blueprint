@@ -11,7 +11,7 @@ class GetIssues implements UseCase<ResponseIntegration,NoParams>{
     required this.issueRepo
   });
   @override
-  Future<ResponseIntegration> execute(NoParams noParams)=>issueRepo.getAllIssuesWithinRepo();
+  Future<ResponseIntegration> call(NoParams noParams)=>issueRepo.getAllIssuesWithinRepo();
  
 
 }

@@ -16,8 +16,7 @@ void main() async{
   prefs.setGitHubToken=token;
   GetIssues getIssues=GetIssues(issueRepo: IssueRepo(issueService: IssueService()));
   test('getDataFromApi', () async {
-    final response = await getIssues.execute(NoParams());
-  
+    final response = await getIssues.call(NoParams());
       print('repos: ${response.repos}');
     print('user:  ${response.user}');
   });
